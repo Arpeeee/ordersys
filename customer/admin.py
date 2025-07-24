@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import Customer, Contact, Order
+from django.contrib.admin import AdminSite
 # Register your models here.
 
 @admin.register(Customer)
@@ -32,3 +33,7 @@ class OrderAdmin(admin.ModelAdmin):
     list_filter = ('customer','machine')
     search_fields = ('order_number', 'customer__name')
     list_per_page = 10
+
+admin.site.site_header='GOGOLEE 機器維修保養系統'
+admin.site.site_title='GOGOLEE 機器維修保養系統'
+admin.site.index_title='GOGOLEE 機器維修保養系統'
