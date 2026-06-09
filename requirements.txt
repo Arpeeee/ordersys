@@ -14,3 +14,4 @@ whitenoise==6.7.0
 gunicorn==22.0.0
 django-storages==1.14.4
 google-cloud-storage==2.18.0
+django-axes==7.0.1

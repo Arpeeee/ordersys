@@ -31,7 +31,7 @@ class CircuitUpgrade(models.Model):
     file0 = models.FileField(null=True, blank=True, upload_to='circuit_upgrade/', verbose_name='電路升級檔案')
 
     def __str__(self):
-        return f"{self.circuit.name} - {self.updated_at}"
+        return f"{self.circuit.number} - {self.updated_at}"
 
     class Meta:
         verbose_name = '電路板升級'
