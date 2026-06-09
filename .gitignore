@@ -90,4 +90,9 @@ db.sqlite3
 media/*
 media
 
-*/migrations/*
+migrations/*
+migrations
+
+# Docker / build output
+staticfiles/
+venv/
